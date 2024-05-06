@@ -175,8 +175,14 @@ namespace geek_downloader
                     sub.mp4_url = mp4_url;
                     sub.markdown = markdown;
                     title = title.Replace("|", "-");
-                    title = title.Replace("?", "£¿");
+                    title = title.Replace("?", "ï¼Ÿ");
                     title = title.Replace("/", "");
+                    title = title.Replace("\\", "");
+                    title = title.Replace("*", "");
+                    title = title.Replace(":", "-");
+                    title = title.Replace("\"", "");
+                    title = title.Replace("<", "ã€Š");
+                    title = title.Replace(">", "ã€‹");
 
                     sub.title = title;
                     //this.listView_course.BeginUpdate();
